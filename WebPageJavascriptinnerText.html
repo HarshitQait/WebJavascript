@@ -1,0 +1,15 @@
+<html>
+    <head><title>Javascript</title></head>
+    <body>
+        <h1 style="text-align: center">WebPageJavascriptinnerText</h1>
+        <div>
+            <p id='para'>This is a paragraph tag</p>
+        </div>
+        <button type="button" onclick="changeText();">Change text! </button>
+    <script>
+    function changeText(){
+        var par=document.getElementById('para').innerText="<b>This paragraph has been altered after the click event.</b>"
+    }
+    </script>
+    </body>
+</html>

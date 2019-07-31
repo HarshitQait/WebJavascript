@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Javascript</title> </head>
+<body>
+<button id="btn1" type="button" >Button 1!</button> <br/>
+<button id="btn2" type="button" >Button 2!</button> 
+
+<div onclick="alert('The handler!')">
+    <em>If you click on <code>EM</code>, the handler on <code>DIV</code> runs.</em>
+</div>
+<hr/>
+
+<!--example for bubbling-->
+<form onclick="alert('form')">FORM
+    <div onclick="alert('div')">DIV
+      <p onclick="alert('p')">P</p>
+    </div>
+  </form>
+
+<script>
+    var btn1 = document.getElementById('btn1');
+    btn1.addEventListener("click",displayAlert,false);
+
+    document.getElementById('btn2').onclick = function(){
+        alert('You Pressed Button 2');
+    };
+function displayAlert(){
+    alert('You Presses Button 1');
+}</script>
+</body>
+</html>

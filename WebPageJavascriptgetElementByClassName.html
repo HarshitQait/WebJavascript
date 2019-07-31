@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Javascript</title> </head>
+<body>
+    <h1 style="text-align: center">GetElementByClassName</h1>
+<input type="text" class="textField" placeholder="Enter an integer" onfocus="colorchange(this);">    
+<input type="text" class="textField" placeholder="Enter an integer" onfocus="colorchange(this);">    
+
+<button id= "btn1" type="button" value="submit" >Submit</button> 
+
+<script>
+document.getElementById("btn1").onclick = function(){
+    alert("You Entered "+ document.getElementsByClassName("textField")[0].value);
+    alert("You Entered "+ document.getElementsByClassName("textField")[1].value);
+};
+function colorchange(x){
+    x.style.background = "yellow";
+}</script>
+</body>
+</html>

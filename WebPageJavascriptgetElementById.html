@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Javascript</title> </head>
+<body>
+    <h1 style="text-align: center">GetElementById</h1>
+<input type="text" id="textField" placeholder="Enter an integer" onfocus="colorchange(this);">    
+<button id= "btn1" type="button" value="submit" >Submit</button> 
+
+<script>
+document.getElementById("btn1").onclick = function(){
+    alert("You Entered "+ document.getElementById("textField").value);
+};
+function colorchange(x){
+    x.style.background = "yellow";
+}</script>
+</body>
+</html>

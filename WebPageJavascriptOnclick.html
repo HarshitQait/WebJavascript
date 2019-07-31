@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Javascript</title> </head>
+<body>
+<button id="btn1" type="button" >Button 1!</button> 
+<button id="btn2" type="button" >Button 2!</button> 
+
+
+<script>
+    btn1 = document.getElementById('btn1');
+    btn1.onclick = displayAlert;
+    btn2 = document.getElementById('btn2');
+    btn2.onclick = function(){
+        alert('You Pressed Button 2');
+    };
+function displayAlert(){
+    alert('You Presses Button 1');
+}</script>
+</body>
+</html>
