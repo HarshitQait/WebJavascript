@@ -1,0 +1,22 @@
+<html>
+    <head><title>Javascript</title></head>
+    <body>
+        <div style="text-align: center;padding: 5;">
+            <h1 >WebPageJavascriptFunctionReturn</h1>
+            <div id="id1"></div><br/>
+            <button type="button" onclick="return_call();">Return Function Example</button>
+        </div>
+        <script>
+        function return_call(){
+            // gives undefined in case of error or novar passes as parameter to the typeof operator
+            var num = 20;
+            document.getElementById('id1').innerHTML=ret_fun();
+            }
+        function ret_fun(){
+            var a =5;
+            var b =10;
+            return (a+b) ;
+        }
+        </script>
+    </body>
+</html>

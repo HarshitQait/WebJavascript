@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center;padding: 5;">WebPageJavascriptDatatypes</h1>
+        <div id="id1"></div> <br/>  
+        <div id="id2"></div><br/>
+        <div id="id3"></div> <br/>  
+        <div id="id4"></div><br/>
+        <div id="id5"></div><br/>
+        <button type="button" onclick="doc_call();">
+            Datatypes Example
+        </button>
+        
+        <script>
+        function doc_call(){
+            var num = 20;
+            var str = "This is a string";
+            var arr_num = [10,23,45,56];
+            var arr_string =['hello','Hi','bye'];
+            var obj={'city':'lucknow','state':'Uttar Pradesh'};
+            document.getElementById('id1').innerHTML=num;
+            document.getElementById('id2').innerHTML=str;
+            document.getElementById('id3').innerHTML=arr_num;
+            document.getElementById('id4').innerHTML=arr_string;
+            document.getElementById('id5').innerHTML=obj.city+" "+obj.state;
+        }
+        </script>
+    </body>
+</html>

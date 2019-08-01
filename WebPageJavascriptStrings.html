@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center;padding: 5;">WebPageJavascriptStrings</h1>
+        <div id="quote1"></div> <br/>  
+        <div id="quote2"></div><br/>
+        <button type="button" onclick="doc_call();">
+            Strings Example
+        </button>
+        <!-- We use parseInt  to change string to integer-->
+        <script>
+        function doc_call(){
+            document.getElementById('quote1').innerHTML="This is Double quotes example";
+            document.getElementById('quote2').innerHTML='This is Single quotes example';
+        }
+        </script>
+    </body>
+</html>

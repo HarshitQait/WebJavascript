@@ -1,0 +1,32 @@
+<html>
+    <head><title>Javascript</title></head>
+    <body>
+        <div style="text-align: center;padding: 5;">
+            <h1 >WebPageJavascripttypeofOperator</h1>
+            <div id="id1"></div> <br/>  
+            <div id="id2"></div><br/>
+            <div id="id3"></div> <br/>  
+            <div id="id4"></div><br/>
+            <div id="id5"></div><br/>
+            <div id="id6"></div><br/>
+            <button type="button" onclick="typeof_call();">TypeOf Operator Example</button>
+        </div>
+        <script>
+        function typeof_call(){
+            // gives undefined in case of error or novar passes as parameter to the typeof operator
+            var num = 20;
+            var str = "This is a string";
+            var arr_num = [10,23,45,56];
+            var arr_string =['hello','Hi','bye'];
+            var obj={'city':'lucknow','state':'Uttar Pradesh'};
+            var bol=true;
+            document.getElementById('id1').innerHTML=typeof(num);
+            document.getElementById('id2').innerHTML=typeof(str);
+            document.getElementById('id3').innerHTML=typeof(arr_num);
+            document.getElementById('id4').innerHTML=typeof(arr_string);
+            document.getElementById('id5').innerHTML=typeof(obj);
+            document.getElementById('id6').innerHTML=typeof(bol);
+        }
+        </script>
+    </body>
+</html>
